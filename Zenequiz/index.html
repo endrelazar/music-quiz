@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Zenequiz</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="mainTitle">Zenequiz</h1>
+    <div id="langSelect" style="text-align:right; margin: 10px 0;">
+    <label for="lang" id="langLabel">Nyelv:</label>
+    <select id="lang">
+        <option value="hu">🇭🇺 Magyar</option>
+        <option value="en">🇬🇧 English</option>
+    </select>
+    </div>
+<form id="artistForm">
+    <label for="artist" id="artistLabel">Előadó neve:</label>
+    <input type="text" id="artist" name="artist" required>
+    <button type="submit" id="searchBtn">Keresés</button>
+</form>
+<div id="songs"></div>
+<div id="lyrics"></div>
+<script src="static/script.js"></script>
+</body>
+</html>
