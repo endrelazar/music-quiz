@@ -1,12 +1,12 @@
 from flask import Flask, request, jsonify, send_from_directory
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import lyricsgenius
 import random
 
 app = Flask(__name__)
 
-load_dotenv('token.env')
+#load_dotenv('token.env')
 genius = lyricsgenius.Genius(
     os.getenv('TOKEN'),
     verbose=True,
