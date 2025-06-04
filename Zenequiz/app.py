@@ -20,6 +20,9 @@ try:
         verbose=True,
         timeout=15
     )
+    genius._session.headers.update({
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+    })
 except Exception as e:
     print(f"HIBA: Nem sikerült inicializálni a Genius API-t: {e}", file=sys.stderr)
     exit(1)
